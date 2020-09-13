@@ -29,7 +29,7 @@ Trigger Travis CI builds using the API V3 by sending a POST request to `/repo/{s
    }}'
 
    curl -s -X POST \
-      -H "Content-Type: application/json" \
+      -H "Content-Type: application/" \
       -H "Accept: application/json" \
       -H "Travis-API-Version: 3" \
       -H "Authorization: token xxxxxx" \
@@ -153,7 +153,7 @@ We recommend to specify the merge mode with your API requests explicitly.
 
 Consider these examples:
 
-```json
+```
 # build config sent via API
 {
   "env": [
